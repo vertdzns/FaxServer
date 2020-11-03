@@ -15,9 +15,9 @@ RUN apt-get update && \
 RUN dpkg-reconfigure -f noninteractive tzdata
 
 # Install libsodium
-RUN wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.16.tar.gz && \
-    tar xzf libsodium-1.0.16.tar.gz && \
-    cd libsodium-1.0.16 && \
+RUN wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.18.tar.gz && \
+    tar xzf libsodium-1.0.18.tar.gz && \
+    cd libsodium-1.0.18 && \
     ./configure && \
     make && make check && \
     make install && \
